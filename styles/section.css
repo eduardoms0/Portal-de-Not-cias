@@ -1,3 +1,25 @@
+section header{
+    border-top: solid 1px var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+
+    a{
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span{
+            background-image: (url(styles/assets/icons/arrow-right.svg));
+            width: 16px;
+            height: 16px;
+        }
+
+        &:hover span{
+            background-image: url(styles/assets/icons/arrowRightHover.svg);
+    }
+}
+
+
 main{
     margin-top: 40px;
 }
@@ -35,4 +57,13 @@ main{
             background-color: linear-gradient(180deg, transparent 0%, #020617 100%);
         }
     }
+}
+
+#weekly{
+    &>div{
+        grid-template-columns: repeat(4, 1fr);
+    }
+img{
+    height:160px;
+}
 }
